@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array method -> filter method </h1>
+   
+
+    
+    <script>
+        var user = [
+            {
+                 id:1,
+                 first:"jyoti",
+                 last:"sharma",
+                 email:"jyoti@gmail.com"
+
+            },
+            {
+                 id:2,
+                 first:"vanita",
+                 last:"betakar",
+                 email:"vanit23a@gmail.com"
+
+            },
+            {
+                 id:3,
+                 first:"jyoti",
+                 last:"patil",
+                 email:"jyoti567@gmail.com"
+
+            },
+            {
+                 id:4,
+                 first:"vidya",
+                 last:"sharma",
+                 email:"vidya@gmail.com"
+
+            },
+    ];
+
+    console.log('output =', user);
+
+   // array.filter -> output is an array FormData
+   var user1 = user.filter(function(item) {
+        return item.first === "jyoti"
+   });
+   console.log('output1 =', user1);
+
+   // array.output is an object format
+   var user2 = user.find(function(item) {
+        return item.id === 3
+   });
+
+   console.log('output2 =', user2);
+    </script>
+</body>

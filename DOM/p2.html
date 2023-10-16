@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .txt {
+            color: crimson;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+    
+        .blk {
+            color: deepskyblue;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>document.getElemntByClassName</h3>
+    <p class="txt">Loream ispum</p>
+    <p class="txt">Loream ispum</p>
+    <p class="txt">Loream ispum</p>
+    <p class="txt">Loream ispum</p>
+    <p class="txt">Loream ispum</p>
+    <p class="txt">Loream ispum</p>
+
+
+    <p class="bk">block para</p> 
+    <p class="bk">block para</p>
+    <p class="bk">block para</p>
+    <p class="bk">block para</p>
+
+    <button onclick="handler()">Click Me</button>
+    <script>
+        function handler() {            
+            var num = document.getElementByIdClassName("txt").length;
+            var num1 = document.getElementByIdClassName("blk").length;
+            alert('num of para are =' + num);
+            alert('num of blocks are =' + num1);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>email validation</h3>
+
+    <form action="" autocomplete="off">
+        <label for="email">Email id</label>
+        <input type="text" name="email" id="email" onkeyup="validate()">
+        <strong id="status"></strong>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validate() {
+            var email = document.getElementById('email').value;
+            var status = document.getElementById('status');
+            var regex = /^\S+@\S+\.\S+$/; 
+
+            if (email === "") {
+                status.innerText ='Email failed must be filled';
+                status.style.color ='orangered';
+            } else {
+                if(regex.test(email) === false) {
+                    status.innerText = 'Invalidate email id';
+                    status.style.color ='orangered';
+                } else {
+                    status.innerText = 'validate email id';
+                    status.style.color ='green';
+                }
+            } 
+        }
+    </script>
+
+
+</body>
+</html>

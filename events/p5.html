@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt {
+            background-color: teal;
+            color: #fff;
+            padding: 12px;
+            width: 50%;
+            height: 500px;
+            overflow: auto;
+        }
+        h4 {
+            padding: 10px;
+            background-color: crimson;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h3>onmousewheel() and onscroll() </h3>
+
+    <h4 id="output"></h4>
+
+    <div id="txt" onmousewheel="wheelHandler()" onscroll="wheelHandler()">
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus, eos, repellat voluptate reprehenderit adipisci magnam quas quos voluptates dolores rerum harum a ab vel voluptas velit sunt? Harum, iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum ad modi perferendis nulla cupiditate enim eum eveniet excepturi quaerat nam maiores repudiandae natus dicta sunt, porro deserunt facere nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eos iure culpa. Fugiat nihil asperiores sunt eum minima. Harum ab deleniti a, vero dolorem officia nulla id quo fuga placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, soluta numquam. Illo ratione officiis, perferendis laboriosam commodi laborum repellat! Quidem hic minima ab similique. Architecto, repellat tempora. Itaque, voluptates voluptate?
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus, eos, repellat voluptate reprehenderit adipisci magnam quas quos voluptates dolores rerum harum a ab vel voluptas velit sunt? Harum, iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum ad modi perferendis nulla cupiditate enim eum eveniet excepturi quaerat nam maiores repudiandae natus dicta sunt, porro deserunt facere nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eos iure culpa. Fugiat nihil asperiores sunt eum minima. Harum ab deleniti a, vero dolorem officia nulla id quo fuga placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, soluta numquam. Illo ratione officiis, perferendis laboriosam commodi laborum repellat! Quidem hic minima ab similique. Architecto, repellat tempora. Itaque, voluptates voluptate?
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus, eos, repellat voluptate reprehenderit adipisci magnam quas quos voluptates dolores rerum harum a ab vel voluptas velit sunt? Harum, iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum ad modi perferendis nulla cupiditate enim eum eveniet excepturi quaerat nam maiores repudiandae natus dicta sunt, porro deserunt facere nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eos iure culpa. Fugiat nihil asperiores sunt eum minima. Harum ab deleniti a, vero dolorem officia nulla id quo fuga placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, soluta numquam. Illo ratione officiis, perferendis laboriosam commodi laborum repellat! Quidem hic minima ab similique. Architecto, repellat tempora. Itaque, voluptates voluptate?
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus, eos, repellat voluptate reprehenderit adipisci magnam quas quos voluptates dolores rerum harum a ab vel voluptas velit sunt? Harum, iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum ad modi perferendis nulla cupiditate enim eum eveniet excepturi quaerat nam maiores repudiandae natus dicta sunt, porro deserunt facere nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eos iure culpa. Fugiat nihil asperiores sunt eum minima. Harum ab deleniti a, vero dolorem officia nulla id quo fuga placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, soluta numquam. Illo ratione officiis, perferendis laboriosam commodi laborum repellat! Quidem hic minima ab similique. Architecto, repellat tempora. Itaque, voluptates voluptate?
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero minus, eos, repellat voluptate reprehenderit adipisci magnam quas quos voluptates dolores rerum harum a ab vel voluptas velit sunt? Harum, iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime earum ad modi perferendis nulla cupiditate enim eum eveniet excepturi quaerat nam maiores repudiandae natus dicta sunt, porro deserunt facere nobis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum eos iure culpa. Fugiat nihil asperiores sunt eum minima. Harum ab deleniti a, vero dolorem officia nulla id quo fuga placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, soluta numquam. Illo ratione officiis, perferendis laboriosam commodi laborum repellat! Quidem hic minima ab similique. Architecto, repellat tempora. Itaque, voluptates voluptate?
+        </p>
+    </div>
+
+    <script>
+        function wheelHandler() {
+            var pos = document.getElementById("txt");
+            document.getElementById("output").innerHTML = pos.scrollTop + "px";
+        }
+    </script>
+</body>
+</html>

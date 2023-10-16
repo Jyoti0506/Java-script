@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #222;
+            display:  flex;
+            justify-content: space-evenly;
+            padding: 20px;
+        }
+
+        .container select {
+            width: 200px;
+        }
+
+        .container .btn {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>document.querySelectorAll and replaceChlidre </h1>
+
+    <form >
+        <section class="container">
+            <div class="left">
+                <select name="no" id="no" multiple="multiple" size="10">
+                    <option value="blue">blue</option>
+                    <option value="white">white</option>
+                    <option value="orange">orange</option>
+                    <option value="red">red</option>
+                    <option value="pink">pink</option>
+                    <option value="green">green</option>
+                    <option value="gold">gold</option>
+                    <option value="yellow">yellow</option>
+                    <option value="black">black</option>
+                    <option value="grey">grey</option>
+                    <option value="skyblue">skyblue</option>
+                </select>
+            </div>
+            <div class="btn">
+                <button id="add">Add Selection</button>
+                <button id="remove">Remove Selection</button>
+            </div>
+            <div class="right">
+                <select name="yes" id="yes" size="10"></select>
+            </div>
+        </section>
+    </form>
+
+    <script src="./js/dropSelect.js"></script>
+</body>
+</html>

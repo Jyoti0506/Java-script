@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Arrays</h3>
+
+    array-> is group of values of similar type
+
+    types
+    1. Literal type (single)
+            a. array Literal
+            b. array using constructor
+            c. array as constructor parameter 
+    2. Object array
+    3. JSON (javascript object Notation) Array (Response of REST -[Representational State transfer]) API
+
+    <script>
+        // () -> function closure / expression closure
+        // [] -> array 
+        // {} -> block
+
+        //array literal
+        var x = []; // empty array
+        var num = [12,2,33,55,66]; //numbers
+        var user = ['rem', 'Venu', "Sourav", "suma", "Nandini"];  //strings
+        var arr = [true,124,"admi@gmail.com",234.456]; // mix type
+
+        document.write(`<h3> ${ arr[0]}</h3>`); // arrName[index]
+        document.write(`<h3> ${ arr }</h3>`);
+
+        document.write(`<h3> ${ user[2]}</h3>`);
+        document.write(`<h3> ${ user}</h3>`);
+
+        document.write(`<h3> ${ num[4]}</h3>`);
+        document.write(`<h3> ${ num }</h3>`);
+
+
+        // iteration of an array values
+        for(i=0; i< user.length; i++) {
+                document.write(`<h3 style='color:orangered;'> ${ user[i] } </h3>`);
+        }
+    </script>
+</body>
+</html>

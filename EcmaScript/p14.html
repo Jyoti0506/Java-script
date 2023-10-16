@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Object.defineproperties()</h3>
+    <script>
+    "use strict"; //to enable strict mode
+
+    var user = {};
+
+    console.log('before=',user);
+
+    Object.defineProperties(user,{
+        "name": {
+        value: "jyoti",
+        writable:true//throw type error in strict mod
+        },
+        "email": {
+            value:"jyo@gmail.com",
+            writable:false
+        },
+        "age" : {
+            value: 22,
+            writable:true
+        }
+    });
+
+    console.log('name', user.name);
+    console.log('email', user.email);
+    console.log('age', user.age);
+
+    try {
+        user.name = "abhi";
+        user.email = "abhi@gmail.com";
+        user.age = 26;
+
+    } catch (err) {
+        console.log(err.message);
+    }
+
+    console.log('name', user.name);
+    console.log('email', user.email);
+    console.log('age', user.age);
+    </script>
+</body>
+</html>

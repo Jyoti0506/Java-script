@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Window objects</h3>
+    <button onclick="alertHandler()">alert</button>
+    <button onclick="printHandler()">prompt</button>
+    <button onclick="confirmHandler()">Confirm</button>
+      
+    <script>
+        /*alert, prompt, confirm, open, close=> BOM(browser object model) */
+        function alertHandler() {
+            window.alert(" alert message");
+        }
+        function promptHandler() {
+            var a = window.prompt("enter yuor nsme?");
+            alert(`my name is ${ a }`);
+        }
+
+        function confirmHandler() {
+            var x = window.confirm("are u sure to delete a file?");
+            /* ok => true, cncel -> false */
+            if(x) {
+                alert("file deleted successfully");
+            } else {
+                alert("oops!.. sorry file delete terminated ");
+            }
+        }
+    </script>
+</body>
+</html>
